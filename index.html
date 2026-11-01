@@ -1,0 +1,265 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glow & Grace | Beauty Store</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <div class="announcement">
+    Free delivery on orders above Rs. 5,000
+  </div>
+
+  <header>
+    <a href="#" class="logo">Glow <span>&</span> Grace</a>
+
+    <nav id="navbar">
+      <a href="#home">Home</a>
+      <a href="#shop">Shop</a>
+      <a href="#collections">Collections</a>
+      <a href="#about">About</a>
+    </nav>
+
+    <button class="cart-btn" id="cartButton">
+      Bag (<span id="cartCount">0</span>)
+    </button>
+  </header>
+
+
+  <!-- HERO SECTION -->
+
+  <section class="hero" id="home">
+
+    <div class="hero-content">
+
+      <p class="tagline">BEAUTY, YOUR WAY</p>
+
+      <h1>
+        Feel Good.<br>
+        <span>Look Radiant.</span>
+      </h1>
+
+      <p>
+        Discover beauty essentials that celebrate
+        your natural beauty and confidence.
+      </p>
+
+      <a href="#shop" class="main-btn">
+        Explore Collection →
+      </a>
+
+    </div>
+
+    <div class="hero-image">
+
+      <img
+        src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=1000&q=85"
+        alt="Beauty and makeup products"
+      >
+
+      <div class="beauty-circle">
+        YOUR DAILY<br>
+        DOSE OF GLOW
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- COLLECTIONS -->
+
+  <section class="section" id="collections">
+
+    <h2>Shop By <span>Category</span></h2>
+
+    <div class="category-grid">
+
+      <div class="category-card makeup">
+
+        <img
+          src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=800&q=85"
+          alt="Makeup collection"
+        >
+
+        <div class="category-content">
+          <h3>Makeup</h3>
+          <a href="#shop">Explore →</a>
+        </div>
+
+      </div>
+
+
+      <div class="category-card skincare">
+
+        <img
+          src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=800&q=85"
+          alt="Skincare collection"
+        >
+
+        <div class="category-content">
+          <h3>Skincare</h3>
+          <a href="#shop">Explore →</a>
+        </div>
+
+      </div>
+
+
+      <div class="category-card tools">
+
+        <img
+          src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&w=800&q=85"
+          alt="Beauty tools collection"
+        >
+
+        <div class="category-content">
+          <h3>Beauty Tools</h3>
+          <a href="#shop">Explore →</a>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- PRODUCTS -->
+
+  <section class="section products-section" id="shop">
+
+    <h2>Our <span>Best Sellers</span></h2>
+
+    <div class="filters">
+
+      <button data-filter="All">All</button>
+      <button data-filter="Makeup">Makeup</button>
+      <button data-filter="Skincare">Skincare</button>
+      <button data-filter="Tools">Tools</button>
+
+    </div>
+
+    <div class="product-grid" id="productGrid"></div>
+
+  </section>
+
+
+  <!-- ABOUT -->
+
+  <section class="about" id="about">
+
+    <div>
+
+      <p class="tagline">OUR STORY</p>
+
+      <h2>
+        Beauty Should Feel
+        <span>Like You.</span>
+      </h2>
+
+      <p>
+        At Glow & Grace, we believe beauty is personal.
+        Discover everyday essentials for your beauty routine.
+      </p>
+
+      <a href="#shop" class="main-btn">
+        Shop Now →
+      </a>
+
+    </div>
+
+    <div class="about-image">
+
+      <img
+        src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=900&q=85"
+        alt="Glow and Grace beauty essentials"
+      >
+
+    </div>
+
+  </section>
+
+
+  <!-- NEWSLETTER -->
+
+  <section class="newsletter">
+
+    <h2>Stay In The Glow</h2>
+
+    <p>
+      Subscribe for beauty updates and special offers.
+    </p>
+
+    <form id="newsletterForm">
+
+      <input
+        type="email"
+        placeholder="Enter your email"
+        required
+      >
+
+      <button type="submit">
+        Subscribe
+      </button>
+
+    </form>
+
+    <p id="newsletterMessage"></p>
+
+  </section>
+
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <h2>Glow & Grace</h2>
+
+    <p>
+      Beauty essentials for your everyday glow.
+    </p>
+
+    <p>
+      © 2026 Glow & Grace. All rights reserved.
+    </p>
+
+  </footer>
+
+
+  <!-- SHOPPING CART -->
+
+  <div class="cart-overlay" id="cartOverlay">
+
+    <div class="cart-box">
+
+      <button id="closeCart" class="close-btn">
+        ×
+      </button>
+
+      <h2>Your Shopping Bag</h2>
+
+      <div id="cartItems"></div>
+
+      <h3>
+        Subtotal:
+        <span id="cartSubtotal">Rs. 0</span>
+      </h3>
+
+      <button id="checkoutButton" class="main-btn">
+        Checkout
+      </button>
+
+      <p id="checkoutMessage"></p>
+
+    </div>
+
+  </div>
+
+</body>
+</html>
